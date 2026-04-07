@@ -10,7 +10,7 @@ public class User {
     private String cedula;
 
     @NotBlank(message = "El nombre no puede estar vacío")
-    private String nombreCompleto;
+    private String nombre_completo;
 
     @NotBlank(message = "El username es obligatorio")
     private String username;
@@ -25,7 +25,7 @@ public class User {
 
     public User(String cedula, String nombreCompleto, String username, String clave) {
         this.cedula = cedula;
-        this.nombreCompleto = nombreCompleto;
+        this.nombre_completo = nombreCompleto;
         this.username = username;
         this.clave = clave;
     }
@@ -39,11 +39,11 @@ public class User {
     }
 
     public String getNombreCompleto() {
-        return nombreCompleto;
+        return nombre_completo;
     }
 
     public void setNombreCompleto(String nombreCompleto) {
-        this.nombreCompleto = nombreCompleto;
+        this.nombre_completo = nombreCompleto;
     }
 
     public String getUsername() {
