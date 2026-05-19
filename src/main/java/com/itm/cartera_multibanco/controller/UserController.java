@@ -12,6 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/usuarios") // Esta será la URL base: http://localhost:8080/usuarios
+@CrossOrigin(origins = "*")
 public class UserController {
 
     @Autowired

@@ -9,6 +9,7 @@ import com.itm.cartera_multibanco.service.CarteraService;
 
 @RestController
 @RequestMapping("/cartera")
+@CrossOrigin(origins = "*")
 public class CarteraController {
 
     private final CarteraService carteraService;

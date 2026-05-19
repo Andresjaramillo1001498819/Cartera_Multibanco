@@ -13,6 +13,7 @@ import com.itm.cartera_multibanco.service.CuentaBancariaService;
 //comentario
 @RestController
 @RequestMapping("/cuentas")
+@CrossOrigin(origins = "*")
 public class CuentaBancariaController {
 
     private final CuentaBancariaService service;
